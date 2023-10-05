@@ -34,9 +34,6 @@
 		printf("<p><img class=heroimg src=\"%s/img/%s\" alt=\"Hero image\"></p>\n",$rbase,$entry['heroimg']);
 	$s = ($entry['postproc'] ?? false) ? postproc($entry['content']) : $entry['content'];
 	echo $s;
-	//$s = str_replace('*%3C?','<?',$entry['content']);
-	//$s = str_replace('?%3E*','?>',$s);
-	//require 'data:text/plain;base64,'.base64_encode($s);
 ?>
 	</article>
 	</main>
